@@ -8,6 +8,7 @@
 Git Stash
 Git Fetch
 Git Status
+Git Init
 Чем отличаются final, finally и finalize()?
 Назовите Основные структуры данных
 Что такое «коллекция»? Иерархия Коллекций
