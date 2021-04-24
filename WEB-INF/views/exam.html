@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Экзамен</title>
+</head>
+<body>
+<h1>Вопросы</h1>
+Номер вопроса:<p th:text = "${number}"></p>
+Вопрос:<p th:text = "${name}"></p>
+Ваши Очки:<p th:text = "${balance}"></p>
+
+<td class="w3-center w3-text-black">
+    <a href="/balance?point=1">
+        <button>Знаю</button>
+    </a>
+</td>
+<td class="w3-center w3-text-black">
+    <a href="balance?point=-1">
+        <button>Не знаю</button>
+    </a>
+</td>
+
+</body>
+</html>
