@@ -55,7 +55,7 @@ public class ExamController {
             number++;
             count2++;
             return "exam";
-        } else if (count2 == 45) {
+        } else if (count2 == newAr.size()) {
             if (balance > 40) {
                 toSaveBase();
                 return "super_result";
