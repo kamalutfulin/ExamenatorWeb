@@ -29,20 +29,20 @@ public class ExamController {
 
     public ExamController() throws FileNotFoundException {
     }
-//    @GetMapping("/examen")
-//    public String goToExam(@RequestParam(value = "balance", required = false) Integer balance, String name, Model model) throws IOException, InterruptedException {
-//        ArrayList newAr = takerFile.toMakeRandom();
-//        if (count1 <= newAr.size() && count1 >= 0) {
-//
-//            name = (String) newAr.get(count1);
-//            model.addAttribute("name", name);
-//            count1++;
-//            return "exam";
-//        }
-//
-//        return "error";
-//    }
 
+    @GetMapping("/examen")
+    public String goToExam(@RequestParam(value = "balance", required = false) Integer balance, String name, Model model) throws IOException, InterruptedException {
+        ArrayList newAr = takerFile.toMakeRandom();
+        if (count1 <= newAr.size() && count1 >= 0) {
+
+            name = (String) newAr.get(count1);
+            model.addAttribute("name", name);
+            count1++;
+            return "exam";
+        }
+
+        return "error";
+    }
     @GetMapping("/balance")
     public String goToExam(int point, String name, Model model) throws IOException, InterruptedException {
         ArrayList newAr = takerFile.toMakeRandom();
